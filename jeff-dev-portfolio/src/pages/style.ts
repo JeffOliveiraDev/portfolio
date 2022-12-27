@@ -151,10 +151,11 @@ export const StyledDashboard = styled.div`
     font-weight: 700;
     display: flex;
     align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   }
   .BtnProjects:hover {
-    background-color: #ff8e00;
-    box-shadow: 2px 2px 4px #ff8e00;
+    /* background-color: #ff8e00; */
+    box-shadow: 0px 0px 4px 4px white;
   }
 
   .BoxLanguages {
@@ -200,7 +201,7 @@ export const StyledDashboard = styled.div`
     display: flex;
     justify-content: space-between;
   }
-  @media (max-width: 690px) {
+  @media (max-width: 850px) {
     .BoxInsideAbout {
       display: flex;
       flex-direction: column;
@@ -233,6 +234,7 @@ export const StyledDashboard = styled.div`
     align-items: center;
     gap: 15px;
   }
+
   .ItenAbout {
     cursor: pointer;
     font-size: 20px;
@@ -246,6 +248,130 @@ export const StyledDashboard = styled.div`
     justify-content: center;
   }
   .InsideBoxAboutMeRight img {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 630px;
+    max-width: 430px;
+  }
+  /* .BoxEducationWork {
+    background: var(--Color-background-dark);
+    height: 500px;
+    padding-top: 50px;
+    color: white;
+  }
+  .BoxInteriorEducationWork {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  } */
+  .BoxMyWorks {
+    background: var(--Color-background-dark);
+    color: white;
+    height: fit-content;
+    padding-bottom: 70px;
+  }
+  .BoxInsideWorks {
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+  }
+  .BoxTitleBtnsWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .BoxBtnsWorks {
+    display: flex;
+    gap: 16px;
+  }
+  .BoxBtnsWorks button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+    gap: 10px;
+
+    width: fit-content;
+    height: 47px;
+
+    /* Color 3 */
+
+    background: rgba(57, 62, 70, 0.5);
+    border-radius: 24px;
+
+    color: #eeeeee;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .BoxBtnsWorks button:hover {
+    background: #ff8e5e;
+  }
+  .BoxBtnsWorks button:focus {
+    background: #ff8e5e;
+  }
+
+  @media (max-width: 730px) {
+    .BoxBtnsWorks {
+      flex-wrap: wrap;
+    }
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Works {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .InsideWorks {
+    width: 300px;
+    height: 433px;
+    padding: 20px;
+    line-height: 24px;
+
+    background: rgba(57, 62, 70, 0.5);
+
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .InsideWorks:hover {
+    box-shadow: 0px 0px 2px 2px rgba(255, 142, 94, 1);
+  }
+  .boxBtnWork {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+  }
+  .BtnVisitWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+
+    width: 88px;
+    height: 47px;
+
+    /* Color 3 */
+
+    background: rgba(57, 62, 70, 0.5);
+    border-radius: 24px;
+
+    color: #eeeeee;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .BtnVisitWork:hover {
+    background: #ff8e5e;
+  }
+  .InsideWorks img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
   }
 `;

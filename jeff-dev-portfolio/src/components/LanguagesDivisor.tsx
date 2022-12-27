@@ -6,7 +6,7 @@ import ts from "../img/typescript.svg";
 import figma from "../img/figma.svg";
 import git from "../img/git.svg";
 
-const LanguagesDivisor = () => {
+export const LanguagesDivisor = () => {
   return (
     <div className="BoxLanguages">
       <div className="BoxItens">
@@ -42,5 +42,3 @@ const LanguagesDivisor = () => {
     </div>
   );
 };
-
-export default LanguagesDivisor;
