@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const StyledDashboard = styled.div`
+  width: 100%;
+  @media screen {
+  }
   header > img {
     position: absolute;
 
-    width: 900px;
+    width: 80%;
     height: 1000px;
     left: -6%;
     right: 10%;
@@ -81,9 +84,25 @@ export const StyledDashboard = styled.div`
     height: fit-content;
     display: flex;
   }
+  @media (max-width: 850px) {
+    .InteriorBoxPresentation {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+    .BoxHeaderNameBtns {
+      display: flex;
+      flex-direction: column;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
   .NameDetailsLeft {
     width: 60%;
-    /* max-width: 700px%; */
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -92,7 +111,7 @@ export const StyledDashboard = styled.div`
   }
   .PhotoRight {
     width: 40%;
-    width: 535px;
+    width: 100%;
     height: 534px;
     display: flex;
     align-items: center;
@@ -103,7 +122,7 @@ export const StyledDashboard = styled.div`
   }
   .NameDetailsLeft h3 {
     color: white;
-    /* color: #ffffff80; */
+
     font-weight: 700;
     font-size: 18px;
   }
@@ -113,7 +132,7 @@ export const StyledDashboard = styled.div`
   .NameDetailsLeft p {
     font-weight: 800;
     font-size: 30px;
-    /* line-height: 53px; */
+
     color: white;
   }
   .BtnProjects {
@@ -134,6 +153,8 @@ export const StyledDashboard = styled.div`
     align-items: center;
   }
   .BtnProjects:hover {
+    background-color: #ff8e00;
+    box-shadow: 2px 2px 4px #ff8e00;
   }
 
   .BoxLanguages {
@@ -141,7 +162,7 @@ export const StyledDashboard = styled.div`
     height: 80px;
     width: 100%;
     display: flex;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
   .BoxLanguages img {
     width: 30px;
@@ -163,5 +184,68 @@ export const StyledDashboard = styled.div`
   }
   .LanguageInsideBox h2 {
     font-size: 14px;
+  }
+  .BoxAboutMe {
+    width: 100%;
+    height: fit-content;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: black;
+    margin-top: 2px;
+  }
+  .BoxInsideAbout {
+    width: 80%;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (max-width: 690px) {
+    .BoxInsideAbout {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .InsideBoxAboutMeLeft {
+    width: 100%;
+  }
+
+  .InsideBoxAboutMeLeft span {
+    color: #ff8e5e;
+  }
+  .InsideBoxAboutMeLeft h2,
+  span {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .InsideBoxAboutMeLeft p {
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 800px;
+  }
+  .BtnsAboutMe {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 15px;
+  }
+  .ItenAbout {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .ItenAbout:hover {
+    color: #ff8e5e;
+  }
+  .InsideBoxAboutMeRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .InsideBoxAboutMeRight img {
+    width: 100%;
   }
 `;

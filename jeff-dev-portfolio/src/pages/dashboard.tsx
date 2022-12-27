@@ -2,49 +2,40 @@ import React from "react";
 import { StyledDashboard } from "./style";
 import { HeaderDashboard } from "../components/HeaderDashboard";
 import { Presentation } from "../components/Presentation";
-import html5 from "../img/html5.svg";
-import css from "../img/css.svg";
-import js from "../img/js.svg";
-import react from "../img/react.svg";
-import ts from "../img/typescript.svg";
-import figma from "../img/figma.svg";
-import git from "../img/git.svg";
+import LanguagesDivisor from "../components/LanguagesDivisor";
+import escritorio from "../img/escritorio.svg";
+
+import { FaGithub, FaInstagram, FaLinkedin, FaDev } from "react-icons/fa";
 
 export const Dashboard = () => {
   return (
     <StyledDashboard>
       <HeaderDashboard />
       <Presentation />
+      <LanguagesDivisor />
+      <div className="BoxAboutMe">
+        <div className="BoxInsideAbout">
+          <div className="InsideBoxAboutMeLeft">
+            <h2>
+              <span>Sobre</span> mim
+            </h2>
+            <p>
+              A creative professional with a strong portfolio in digital design,
+              including experience with front-end development. Experienced
+              working from concept to production, and with stakeholders from
+              multiple disciplines. A fluent user of popular design tools like
+              Figma and Adobe CC.
+            </p>
+            <div className="BtnsAboutMe">
+              <FaGithub className="ItenAbout" />
 
-      <div className="BoxLanguages">
-        <div className="BoxItens">
-          <div className="LanguageInsideBox">
-            <img src={html5} alt="" />
-            <h2>HTML</h2>
+              <FaInstagram className="ItenAbout" />
+
+              <FaLinkedin className="ItenAbout" />
+            </div>
           </div>
-          <div className="LanguageInsideBox">
-            <img src={css} alt="" />
-            <h2>CSS</h2>
-          </div>
-          <div className="LanguageInsideBox">
-            <img src={js} alt="" />
-            <h2>Java Script</h2>
-          </div>
-          <div className="LanguageInsideBox">
-            <img src={react} alt="" />
-            <h2>React</h2>
-          </div>
-          <div className="LanguageInsideBox">
-            <img src={ts} alt="" />
-            <h2>TypeScript</h2>
-          </div>
-          <div className="LanguageInsideBox">
-            <img src={figma} alt="" />
-            <h2>Figma</h2>
-          </div>
-          <div className="LanguageInsideBox">
-            <img src={git} alt="" />
-            <h2>git</h2>
+          <div className="InsideBoxAboutMeRight">
+            <img src={escritorio} alt="" />
           </div>
         </div>
       </div>
