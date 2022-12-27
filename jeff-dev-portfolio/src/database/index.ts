@@ -41,6 +41,12 @@ export const dataWorks: iWorks[] = [
   },
 ];
 
+interface iExperience {
+  local: string;
+  about: string;
+  date: string;
+}
+
 export const dataLanguages: iLanguages[] = [
   {
     language: "React",
@@ -52,3 +58,31 @@ export const dataLanguages: iLanguages[] = [
     language: "JavaScript",
   },
 ];
+
+export const jobExperience: iExperience[] = [
+  {
+    local: "",
+    about: "",
+    date: "",
+  },
+];
+
+export const education: iExperience[] = [
+  {
+    local: "",
+    about: "",
+    date: "",
+  },
+];
+
+// <ul>
+//               <li>
+//                 <div>
+//                   <h2>Local</h2>
+//                   <p>sobre</p>
+//                 </div>
+//                 <div>
+//                   <h3>data</h3>
+//                 </div>
+//               </li>
+//             </ul>

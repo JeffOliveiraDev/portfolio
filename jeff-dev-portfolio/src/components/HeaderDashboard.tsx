@@ -1,5 +1,11 @@
 import radialEffect from "../img/radialeffect.svg";
-import { FaGithub, FaInstagram, FaLinkedin, FaDev } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaDev,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const HeaderDashboard = () => {
@@ -25,6 +31,10 @@ export const HeaderDashboard = () => {
           <button>
             <FaLinkedin />
           </button>
+          <button>
+            <FaWhatsapp />
+          </button>
+
           <button className="BtnDownloadCv">Download CV</button>
         </div>
       </div>

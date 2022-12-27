@@ -1,6 +1,6 @@
 import escritorio from "../img/escritorio.svg";
 
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export const AboutMe = () => {
   return (
@@ -18,6 +18,8 @@ export const AboutMe = () => {
             Adobe CC.
           </p>
           <div className="BtnsAboutMe">
+            <FaWhatsapp className="ItenAbout" />
+
             <FaGithub className="ItenAbout" />
 
             <FaInstagram className="ItenAbout" />

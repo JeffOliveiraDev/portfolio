@@ -238,6 +238,7 @@ export const StyledDashboard = styled.div`
   .ItenAbout {
     cursor: pointer;
     font-size: 20px;
+    z-index: 1;
   }
   .ItenAbout:hover {
     color: #ff8e5e;
@@ -248,22 +249,10 @@ export const StyledDashboard = styled.div`
     justify-content: center;
   }
   .InsideBoxAboutMeRight img {
-    /* width: 100%; */
     max-width: 630px;
     max-width: 430px;
   }
-  /* .BoxEducationWork {
-    background: var(--Color-background-dark);
-    height: 500px;
-    padding-top: 50px;
-    color: white;
-  }
-  .BoxInteriorEducationWork {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  } */
+
   .BoxMyWorks {
     background: var(--Color-background-dark);
     color: white;
@@ -280,6 +269,16 @@ export const StyledDashboard = styled.div`
     flex-direction: column;
     gap: 16px;
   }
+  .BoxTitleBtnsWorks h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 53px;
+    color: #ffffff;
+  }
+  .BoxTitleBtnsWorks span {
+    color: #fe8e5e;
+    font-size: 40px;
+  }
   .BoxBtnsWorks {
     display: flex;
     gap: 16px;
@@ -293,8 +292,6 @@ export const StyledDashboard = styled.div`
 
     width: fit-content;
     height: 47px;
-
-    /* Color 3 */
 
     background: rgba(57, 62, 70, 0.5);
     border-radius: 24px;
@@ -356,8 +353,6 @@ export const StyledDashboard = styled.div`
     width: 88px;
     height: 47px;
 
-    /* Color 3 */
-
     background: rgba(57, 62, 70, 0.5);
     border-radius: 24px;
 
@@ -373,5 +368,115 @@ export const StyledDashboard = styled.div`
   .InsideWorks img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+  }
+
+  /* .BoxEducationWork {
+    width: 100%;
+    background: black;
+    height: 500px;
+    padding-top: 50px;
+    color: white;
+  }
+  .BoxInteriorEducationWork {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Education {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .JobExperience {
+  } */
+  .BoxSkills {
+    width: 100%;
+    background: var(--Color-background-dark);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-top: 3px solid rgba(255, 255, 255, 0.09);
+  }
+  .BoxInsideSkills {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .BoxInsideSkills h2 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 54px;
+
+    color: #ffffff;
+  }
+
+  .TittleSkills > span {
+    font-weight: 800;
+    font-size: 45px;
+    color: #fe8e5e;
+    font-size: 45px;
+  }
+  .BoxHabsImgs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media (max-width: 850px) {
+    .BoxHabsImgs {
+      flex-direction: column;
+    }
+  }
+  .Habilities {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .Habilities span {
+    /* color: orange; */
+  }
+  .WhatCanIdo h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+
+    color: #ffffff;
+  }
+  .WhatCanIdo p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .BoxContact {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    border-top: 3px solid rgba(255, 255, 255, 0.09);
+    color: white;
+    padding: 10px;
+  }
+
+  .BoxFooter {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+  }
+  .BoxInteriorContact h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 35px;
+    color: #ffffff;
+  }
+  .BoxFooter h3 {
+    font-size: 1rem;
+    align-items: center;
   }
 `;

@@ -4,79 +4,45 @@ import { HeaderDashboard } from "../components/HeaderDashboard";
 import { Presentation } from "../components/Presentation";
 import { LanguagesDivisor } from "../components/LanguagesDivisor";
 import { AboutMe } from "../components/AboutMe";
-import Education from "../img/Educationhat.svg";
-import PastaTrabalho from "../img/PastaTrabalho.svg";
-import { FcReading, FcBriefcase } from "react-icons/fc";
-import { dataLanguages, dataWorks, iWorks } from "../database";
+import { MyProjects } from "../components/MyProjects";
+import { MySkills } from "../components/MySkills";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export const Dashboard = () => {
-  const [rendeWorks, setRenderWorks] = useState(dataWorks as iWorks[]);
-
-  const filterRenderWorks = (langToRender: string) => {
-    setRenderWorks(
-      dataWorks.filter((lang) => {
-        return lang.language === langToRender;
-      })
-    );
-  };
-
   return (
     <StyledDashboard>
       <HeaderDashboard />
       <Presentation />
       <LanguagesDivisor />
       <AboutMe />
+      <MyProjects />
+      <MySkills />
 
-      <div className="BoxMyWorks">
-        <div className="BoxInsideWorks">
-          <div className="BoxTitleBtnsWorks">
-            <h2>Meus Projetos</h2>
-            <div className="BoxBtnsWorks">
-              <button onClick={() => setRenderWorks(dataWorks)}>Todos</button>
-              {dataLanguages?.map((lang) => {
-                return (
-                  <button
-                    key={lang.language}
-                    onClick={() => filterRenderWorks(lang.language)}
-                  >
-                    {lang.language}
-                  </button>
-                );
-              })}
-            </div>
+      <footer className="BoxContact">
+        <div className="BoxFooter">
+          <div className="BoxInteriorContact">
+            <h2>
+              © 2022 by Jefferson de Barros Oliveira | Feito com TypeScript{" "}
+            </h2>
           </div>
-          <div>
-            <ul className="Works">
-              {rendeWorks?.map((work) => {
-                return (
-                  <li className="InsideWorks">
-                    <img src={work.img} alt="" />
+          <div className="BtnsHeader">
+            <h3>Entre em contato:</h3>
+            <button>
+              <FaWhatsapp />
+            </button>
+            <button onClick={() => window.location.replace("www.google.com")}>
+              <FaGithub />
+            </button>
 
-                    <h3>{work.name}</h3>
-                    <p>{work.description}</p>
-                    <div className="boxBtnWork">
-                      <button className="BtnVisitWork">Visitar</button>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
+            <button>
+              <FaInstagram />
+            </button>
+            <button>
+              <FaLinkedin />
+            </button>
           </div>
         </div>
-      </div>
-
-      {/* <div className="BoxEducationWork">
-        <div className="BoxInteriorEducationWork">
-          <div>
-            <h2>🎓</h2>
-            <h2>Educação</h2>
-          </div>
-          <div>
-            <h2>💼</h2>
-            <h2>Experiência</h2>
-          </div>
-        </div>
-      </div> */}
+      </footer>
     </StyledDashboard>
   );
 };
