@@ -7,9 +7,9 @@ export const StyledDashboard = styled.div`
   header > img {
     position: absolute;
 
-    width: 80%;
-    height: 1000px;
-    left: -6%;
+    width: 50%;
+    height: 700px;
+    left: -1%;
     right: 10%;
 
     top: 100%;
@@ -26,7 +26,6 @@ export const StyledDashboard = styled.div`
     background: var(--Color-background-dark);
     border-bottom: 3px solid rgba(255, 255, 255, 0.09);
     backdrop-filter: blur(6px);
-    background-color: black;
   }
   .BoxHeaderNameBtns {
     width: 80%;
@@ -46,34 +45,74 @@ export const StyledDashboard = styled.div`
     align-items: center;
     gap: 10px;
   }
+  .BoxBtnsHeader {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  @media (max-width: 430px) {
+    .BoxBtnsHeader {
+      flex-direction: column;
+    }
+    header {
+      height: fit-content;
+    }
+    header img {
+      display: none;
+    }
+    .BtnsHeader {
+      justify-content: center;
+      margin-top: 15px;
+    }
+  }
+
   .BtnsHeader {
     display: flex;
     gap: 15px;
     height: 100%;
     align-items: center;
   }
-  .BtnsHeader button {
+  .BtnsHeader a {
     color: var(--Color-white);
     font-size: 20px;
+    cursor: pointer;
   }
 
-  .BtnsHeader button:hover {
+  .BtnsHeader a:hover {
     color: #ff8e5e;
     border-color: #ff8e5e;
   }
+  .CvsDownload {
+    display: flex;
+    gap: 10px;
+  }
+  .CvsDownload a {
+    font-size: 12px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
   .BtnDownloadCv {
-    width: 187px;
-    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+
+    width: 120px;
+    height: 40px;
+    color: var(--Color-white);
 
     border: 1px solid #ffffff;
     border-radius: 60px;
-    font-size: 14px;
-    font-weight: 700;
+  }
+
+  .BtnDownloadCv:hover {
+    color: #ff8e5e;
+    border-color: #ff8e5e;
   }
   .BoxPresentation {
     width: 100%;
     background: var(--Color-background-dark);
-    background-color: black;
+
     border-bottom: rgba(255, 255, 255, 0.02);
   }
   .InteriorBoxPresentation {
@@ -90,6 +129,7 @@ export const StyledDashboard = styled.div`
       flex-direction: column-reverse;
       align-items: center;
       padding-bottom: 30px;
+      padding-top: 30px;
     }
     .BoxHeaderNameBtns {
       display: flex;
@@ -97,6 +137,19 @@ export const StyledDashboard = styled.div`
 
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+    header img {
+      width: 45%;
+      height: 500px;
+      top: 500%;
+      left: 22%;
+      right: 10%;
+
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.11) 0%,
+        rgba(29, 30, 34, 0) 100
+      );
     }
   }
 
@@ -118,7 +171,12 @@ export const StyledDashboard = styled.div`
     justify-content: center;
   }
   .PhotoRight img {
+    z-index: 1;
     border-radius: 30px;
+    transition: all 0.3s;
+  }
+  .PhotoRight img:hover {
+    transform: scale(1.3) rotate(10deg);
   }
   .NameDetailsLeft h3 {
     color: white;
@@ -135,11 +193,12 @@ export const StyledDashboard = styled.div`
 
     color: white;
   }
+
   .BtnProjects {
     padding: 20px 60px;
     gap: 10px;
 
-    width: 215px;
+    width: 290px;
     height: 59px;
 
     background: #ff8e5e;
@@ -156,6 +215,16 @@ export const StyledDashboard = styled.div`
   .BtnProjects:hover {
     /* background-color: #ff8e00; */
     box-shadow: 0px 0px 4px 4px white;
+  }
+  @media (max-width: 394px) {
+    .NameDetailsLeft p {
+      font-size: 20px;
+    }
+    .BtnProjects {
+      width: 160px;
+      font-size: 14px;
+      height: 70px;
+    }
   }
 
   .BoxLanguages {
@@ -182,10 +251,20 @@ export const StyledDashboard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    z-index: 1;
+    cursor: pointer;
+  }
+  .LanguageInsideBox img {
+    transition: all 2.3s;
+  }
+  .LanguageInsideBox img:hover {
+    transform: scale(1.2) rotateY(360deg);
   }
   .LanguageInsideBox h2 {
     font-size: 14px;
   }
+
   .BoxAboutMe {
     width: 100%;
     height: fit-content;
@@ -226,6 +305,9 @@ export const StyledDashboard = styled.div`
     line-height: 24px;
     max-width: 800px;
   }
+  .InsideBoxAboutMeLeft a {
+    color: var(--Color-orange);
+  }
   .BtnsAboutMe {
     width: 100%;
     height: 60px;
@@ -233,6 +315,16 @@ export const StyledDashboard = styled.div`
     color: white;
     align-items: center;
     gap: 15px;
+  }
+  .BtnsAboutMe a {
+    color: var(--Color-white);
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .BtnsAboutMe a:hover {
+    color: #ff8e5e;
+    border-color: #ff8e5e;
   }
 
   .ItenAbout {
@@ -246,11 +338,28 @@ export const StyledDashboard = styled.div`
   .InsideBoxAboutMeRight {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .InsideBoxAboutMeRight h2 {
+    font-size: 16px;
   }
   .InsideBoxAboutMeRight img {
     max-width: 630px;
     max-width: 430px;
+    height: 400px;
+    transition: all 0.3s;
+    z-index: 1;
+    border-radius: 8px;
+  }
+  @media (max-width: 430px) {
+    .InsideBoxAboutMeRight img {
+      width: 90%;
+    }
+  }
+  .InsideBoxAboutMeRight img:hover {
+    transform: scale(1.2) rotate(3deg);
   }
 
   .BoxMyWorks {
@@ -317,10 +426,16 @@ export const StyledDashboard = styled.div`
     flex-wrap: wrap;
   }
   .Works {
+    width: 100%;
     margin-top: 40px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+  }
+  @media (max-width: 803px) {
+    .Works {
+      justify-content: center;
+    }
   }
 
   .InsideWorks {
@@ -338,6 +453,11 @@ export const StyledDashboard = styled.div`
   }
   .InsideWorks:hover {
     box-shadow: 0px 0px 2px 2px rgba(255, 142, 94, 1);
+  }
+  @media (max-width: 350px) {
+    .InsideWorks {
+      width: 280px;
+    }
   }
   .boxBtnWork {
     display: flex;
@@ -368,28 +488,13 @@ export const StyledDashboard = styled.div`
   .InsideWorks img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .InsideWorks img:hover {
+    transform: scale(2.5);
   }
 
-  /* .BoxEducationWork {
-    width: 100%;
-    background: black;
-    height: 500px;
-    padding-top: 50px;
-    color: white;
-  }
-  .BoxInteriorEducationWork {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .Education {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .JobExperience {
-  } */
   .BoxSkills {
     width: 100%;
     background: var(--Color-background-dark);
@@ -468,6 +573,10 @@ export const StyledDashboard = styled.div`
 
     align-items: center;
     justify-content: space-around;
+  }
+  .BoxInteriorContact {
+    display: flex;
+    padding-right: 10px;
   }
   .BoxInteriorContact h2 {
     font-weight: 700;

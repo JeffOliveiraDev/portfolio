@@ -15,7 +15,7 @@ export const MyProjects = () => {
     <div className="BoxMyWorks">
       <div className="BoxInsideWorks">
         <div className="BoxTitleBtnsWorks">
-          <h2>
+          <h2 id="projects">
             Meus <span>Projetos</span>
           </h2>
           <div className="BoxBtnsWorks">
@@ -42,7 +42,9 @@ export const MyProjects = () => {
                   <h3>{work.name}</h3>
                   <p>{work.description}</p>
                   <div className="boxBtnWork">
-                    <button className="BtnVisitWork">Visitar</button>
+                    <a className="BtnVisitWork" href={work.link}>
+                      Visitar
+                    </a>
                   </div>
                 </li>
               );

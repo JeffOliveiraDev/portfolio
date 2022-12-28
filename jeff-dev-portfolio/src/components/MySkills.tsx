@@ -10,7 +10,7 @@ export const MySkills = () => {
   return (
     <div className="BoxSkills">
       <div className="BoxInsideSkills">
-        <h2 className="TittleSkills">
+        <h2 className="TittleSkills" id="HardSkills">
           Minhas <span>habilidades</span>
         </h2>
         <div className="BoxHabsImgs">
@@ -76,10 +76,10 @@ export const MySkills = () => {
               <h2>Um pouco mais sobre mim:</h2>
               <p>
                 Nas horas vagas tenho me dedicado a estudar Inteligências
-                Artificias, até criei um canal onde todo o conteúdo é 100% feito
-                por 3 ou 4 IAs, com elas realizo a montagem do script do vídeo,
-                narração e o vídeo em si, além de já testar a criação de imagens
-                para thunbmail.
+                Artificiais, até criei um canal onde todo o conteúdo é 100%
+                feito por 3 ou 4 IAs, com elas realizo a montagem do script do
+                vídeo, narração e o vídeo em si, além de já testar a criação de
+                imagens para thunbmail.
               </p>
 
               <p>

@@ -75,14 +75,3 @@ export const education: iExperience[] = [
   },
 ];
 
-// <ul>
-//               <li>
-//                 <div>
-//                   <h2>Local</h2>
-//                   <p>sobre</p>
-//                 </div>
-//                 <div>
-//                   <h3>data</h3>
-//                 </div>
-//               </li>
-//             </ul>

@@ -15,7 +15,9 @@ export const Presentation = () => {
             Psicólogo, estudante de desenvolvimento Full Stack e entusiasta de
             Inteligência Artificial!
           </p>
-          <button className="BtnProjects">Veja meus projetos</button>
+          <a href="#projects" className="BtnProjects">
+            Veja meus projetos
+          </a>
         </div>
         <div className="PhotoRight">
           <img src={mePhoto} alt="" />
