@@ -1,4 +1,4 @@
-import escritorio from "../img/escritorio.svg";
+import escritorio from "../../img/escritorio.svg";
 
 import {
   FaGithub,
@@ -7,7 +7,7 @@ import {
   FaWhatsapp,
   FaBirthdayCake,
 } from "react-icons/fa";
-import festaPosto from "../img/EuFestaPosto.jpg";
+// import festaPosto from "../img/EuFestaPosto.jpg";
 
 export const AboutMe = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dataLanguages, dataWorks, iWorks } from "../database";
+import { dataLanguages, dataWorks, iWorks } from "../../database";
 
 export const MyProjects = () => {
   const [rendeWorks, setRenderWorks] = useState(dataWorks as iWorks[]);

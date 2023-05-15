@@ -28,13 +28,14 @@ export const StyledGlobal = createGlobalStyle`
         /* Secondary */
 
         --Color-background-dark: #1d1e22;
+
         --Color-white: #FFFFFF;
         --Color-grey: #393E46;
         --Color-line: rgba(238, 238, 238, 0.1);
 
         /* Accent colors */
         
-        --Color-orange: #FEA55F;
+        --Color-orange: #ff8e5e;
         --Color-zomp: #43D9AD;
         --Color-dark-salmon: #E99287;
         --Color-lavender: #C98BDF;
@@ -82,3 +83,12 @@ export const StyledGlobal = createGlobalStyle`
 }
 
 `;
+
+// const ColorsDarkTheme = {
+//     colors:{
+//     white: #FFFF;
+//     orange: ,
+//     black:
+//     }
+
+// }

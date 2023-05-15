@@ -1,10 +1,10 @@
-import html5 from "../img/html5.svg";
-import css from "../img/css.svg";
-import js from "../img/js.svg";
-import react from "../img/react.svg";
-import ts from "../img/typescript.svg";
-import figma from "../img/figma.svg";
-import git from "../img/git.svg";
+import html5 from "../../img/html5.svg";
+import css from "../../img/css.svg";
+import js from "../../img/js.svg";
+import react from "../../img/react.svg";
+import ts from "../../img/typescript.svg";
+import figma from "../../img/figma.svg";
+import git from "../../img/git.svg";
 
 export const LanguagesDivisor = () => {
   return (

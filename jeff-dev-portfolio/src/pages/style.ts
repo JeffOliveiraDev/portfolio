@@ -111,9 +111,16 @@ export const StyledDashboard = styled.div`
   }
   .BoxPresentation {
     width: 100%;
-    background: var(--Color-background-dark);
+    height: 951px;
+    /* background: var(--Color-background-dark); */
 
     border-bottom: rgba(255, 255, 255, 0.02);
+  }
+  .BoxPresentation > img {
+    height: 951px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
   }
   .InteriorBoxPresentation {
     width: 80%;
@@ -155,7 +162,7 @@ export const StyledDashboard = styled.div`
 
   .NameDetailsLeft {
     width: 60%;
-
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -210,6 +217,7 @@ export const StyledDashboard = styled.div`
     font-weight: 700;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   }
   .BtnProjects:hover {
@@ -234,6 +242,16 @@ export const StyledDashboard = styled.div`
     display: flex;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
+  @media (max-width: 480px) {
+    .BoxLanguages {
+      height: fit-content;
+    }
+    .BoxItens {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+
   .BoxLanguages img {
     width: 30px;
     height: 40px;
@@ -304,6 +322,7 @@ export const StyledDashboard = styled.div`
     font-weight: 400;
     line-height: 24px;
     max-width: 800px;
+    color: rgba(255, 255, 255, 0.7);
   }
   .InsideBoxAboutMeLeft a {
     color: var(--Color-orange);

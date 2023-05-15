@@ -1,9 +1,15 @@
 import { FaHandSpock } from "react-icons/fa";
-import mePhoto from "../img/Mephoto.svg";
+import mePhoto from "../../img/Mephoto.svg";
+import background from "../../img/cool-background.png";
+import gradiente from "../../img/gradiente1.png";
+import brice from "../../img/brice.jpg";
+import trianglify from "../../img/trianglify.png";
+import darkprograming from "../../img/darkprograming.jpg";
 
 export const Presentation = () => {
   return (
     <div className="BoxPresentation">
+      <img src={darkprograming} alt="" />
       <div className="InteriorBoxPresentation">
         <div className="NameDetailsLeft">
           <h3>

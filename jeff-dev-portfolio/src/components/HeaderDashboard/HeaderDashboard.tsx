@@ -1,4 +1,4 @@
-import radialEffect from "../img/radialeffect.svg";
+import radialEffect from "../../img/radialeffect.svg";
 import {
   FaGithub,
   FaInstagram,
@@ -7,7 +7,8 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import CustomizedSwitches from "./Switch";
+
+import CustomizedSwitches from "../Switch/Switch";
 
 export const HeaderDashboard = () => {
   return (
@@ -22,7 +23,7 @@ export const HeaderDashboard = () => {
         </div>
 
         <div className="BoxBtnsHeader">
-          {/* <CustomizedSwitches /> */}
+          <CustomizedSwitches />
           <div className="BtnsHeader">
             <a href="https://github.com/JeffOliveiraDev">
               <FaGithub />
